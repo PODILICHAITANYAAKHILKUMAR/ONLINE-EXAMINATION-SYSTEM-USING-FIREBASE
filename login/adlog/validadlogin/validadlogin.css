@@ -6,7 +6,7 @@
 body{
 font-size:20px;
 color:black;
-background:url("login.png");
+background:url("validadlogin.png");
 background-repeat: no-repeat;
 background-attachment: fixed;
 background-size: 100% 100%;
@@ -61,12 +61,39 @@ margin:auto;
 text-align:center;
 }
 
+
+@media screen and (max-width:1200px){
+  .login{
+    width:380px;
+  }
+}
+@media screen and (max-width:1100px){
+  .login{
+    width:350px;
+  }
+}
 @media screen and (max-width:900px){
-.logins{
-  grid-template-columns: 1fr;
-  margin-top:2rem;
+  .login{
+    width:300px;
+  }
+  }
+@media screen and (max-width:768px){
+  .logins{
+    grid-template-columns: 1fr;
+  }
+    .login{
+      width:500px;
+    }
+  }
+  
+@media screen and (max-width:600px){
+  .login{
+    width:400px;
+  }
 }
-.login{
-  width:300px;
-}
+
+@media screen and (max-width:400px){
+  .login{
+    width:300px;
+  }
 }

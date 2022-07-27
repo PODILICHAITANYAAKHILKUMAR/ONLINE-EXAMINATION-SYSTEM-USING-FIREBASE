@@ -26,7 +26,6 @@ async function getMaterials() {
             console.log('Error : '+ error.message)
     });
     setTimeout(()=>{
-        content=''
     if(!content){
         message.innerHTML='No Materials found';
         return;

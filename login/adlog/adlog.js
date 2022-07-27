@@ -121,13 +121,13 @@ function verify1(e){
             }
             setTimeout(()=>{
                 if(isNewUser1){
-                    alert(countryCode1+phoneNumber1+' is not registered',);
+                    alert('Invalid Credentials');
                     firebase.auth().currentUser.delete();
-                    code='';
+                    code1='';
                 }
                 else{
-                    alert('Welcome Back '+countryCode1+phoneNumber1)
                     code1='';
+                    location.href='validadlogin/validadlogin.html';
                 }
             },1000)
         })
@@ -168,7 +168,6 @@ function verify2(e){
     code2 = document.getElementById('code2').value;
     confirmationResult.confirm(code2).then((result) => {
         setItems();
-        
     }).catch((error) => {
         alert('Error :'+error.message)
     });
@@ -199,9 +198,8 @@ function setItems(){
                     Phone:(countryCode2+phoneNumber2)
             })
                 .then(function(docRef) {
+                    code2='';    
                     location.href='validadlogin/validadlogin.html';
-                    code='';    
-                    console.log("Document written with ID: ", docRef.id);
                 })
                 .catch(function(error) {
                 console.error("Error adding document: ", error.message);

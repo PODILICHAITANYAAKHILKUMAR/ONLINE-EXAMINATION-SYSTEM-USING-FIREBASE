@@ -43,7 +43,6 @@ body{
     transform: translate(-50%, -50%) scale(0.9);
     transition: all 0.3s ease;
 }
-
 .info_box .info-title{
     border-bottom: 1px solid lightgrey;
     font-size: 2rem;
@@ -153,6 +152,7 @@ body{
     left: 0px;
     height: 3px;
     background: #007bff;
+    max-width:100%;
 }
 
 section{
@@ -358,4 +358,16 @@ footer button.show{
 .buttons button.quit:hover{
     color: #fff;
     background: #007bff;
+}
+@media screen and (max-width:600px){
+    .quiz_box,.info_box{
+        width:500px;
+    }
+    
+}
+@media screen and (max-width:500px){
+    .quiz_box,.info_box{
+        width:400px;
+    }
+    
 }

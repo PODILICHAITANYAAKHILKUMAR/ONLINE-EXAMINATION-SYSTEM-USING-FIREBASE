@@ -8,8 +8,8 @@ const option_list = document.querySelector(".option_list");
 const time_line = document.querySelector("header .time_line");
 const timeText = document.querySelector(".timer .time_left_txt");
 const timeCount = document.querySelector(".timer .timer_sec");
-
-//alert(testName);
+//alert('testName'+testName);
+//alert('studentRollNo'+rollNo)
 // if exitQuiz button clicked
 exit_btn.onclick = ()=>{
     location.href='../taketest.html'; //redirect to taketest.html

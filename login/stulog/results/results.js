@@ -1,12 +1,12 @@
 const firebaseConfig = {
-    apiKey: "AIzaSyBmRb0aKxPiB7EV2LQYb7U5SjEyfUMr-ig",
-    authDomain: "smsproject-ecd2d.firebaseapp.com",
-    projectId: "smsproject-ecd2d",
-    storageBucket: "smsproject-ecd2d.appspot.com",
-    messagingSenderId: "263965204952",
-    appId: "1:263965204952:web:8f4ee00d7db469338092ad",
-    measurementId: "G-SED0D8TV4G"
-    };
+    apiKey: "AIzaSyDbMYcbZstFhXRuzJVRHBf_UfXP2c3sBHY",
+    authDomain: "online-examination-syste-331ca.firebaseapp.com",
+    projectId: "online-examination-syste-331ca",
+    storageBucket: "online-examination-syste-331ca.appspot.com",
+    messagingSenderId: "823283810877",
+    appId: "1:823283810877:web:eeda364fd46109a6136054",
+    measurementId: "G-HHHBQ5GNEV"
+};
 
 firebase.initializeApp(firebaseConfig);
 const db=firebase.firestore();
@@ -79,7 +79,7 @@ function displayTable(){
                     <tr>
                         <th>R No.</th>
                         <th>Year</th>
-                        <th>Quarter</th>
+                        <th>Semester</th>
                         <th>CGP</th>
                     </tr>
                 </thead>

@@ -2,10 +2,11 @@ let rno=document.getElementById("rnoValue");
 let password=document.getElementById("passwordValue");
 let testNameValue=document.getElementById("testNameValue");
 let pattern=/3191064100[0-9]{2}/;
-var studentRollNo='';
-var testName='';
 let submit=document.getElementById("sub");
-submit.addEventListener("click",verify);
+
+if(submit){
+    submit.addEventListener("click",verify);
+}
 
 function verify(e){
     e.preventDefault();
